@@ -38,18 +38,18 @@
     <hr>
     <h2>@Lists</h2>
     <h3>Unordered Lists</h3>
-    <ul>
+    <ul class = "list-non-bullet">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
     </ul>
 
     <h3>Inline Unordered List</h3>
-    <div>NOTE: We are applying CSS to bring all the below items of list into single Line</div>
+    <p>NOTE: We are applying CSS to bring all the below items of list into single Line</p>
     <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+        <li class = "list-item-inline">Inline Item One</li>
+        <li class = "list-item-inline">Inline Item Two</li>
+        <li class = "list-item-inline">Inline Item Three</li>
     </ul>
 
     <h3>Ordered List</h3>
@@ -60,54 +60,73 @@
     </ol>
 
     <h3>Reverse Ordered List</h3>
-    <div>NOTE: We are applying CSS to reverse the order here</div>
-    <ol>
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+    <ol reversed>
+        <li>Reversed Inline Item One</li>
+        <li>Reversed Inline Item Two</li>
+        <li>Reversed Inline Item Three</li>
     </ol>
 
     <hr>
     <h2>@Navigation Section</h2>
 
     <p>Navigation is used to navigate to different pages of the Website and is at the top of the page usually</p>
-
-    <div>BelkIoT</div>
-    <ul>
-        <li>
-            <a href="/">Podcast</a>
-        </li>
-        <li>
-            <a href="/">Blogs</a>
-        </li>
-        <li>
-            <a href="/">Courses</a>
-        </li>
-    </ul>
+    <nav class = "navigation container">
+        <div class = "nav-brand">BelkIoT</div>
+        <ul class= "list-non-bullet nav-pills">
+            <li class = "list-item-inline">
+                <a class = "links link-active" href="https://belkiot.in/podcast">Podcast</a>
+            </li>
+            <li class = "list-item-inline">
+                <a class = "links" href="https://belkiot.in/blogs">Blogs</a>
+            </li>
+            <li class = "list-item-inline">
+                <a class = "links" href="https://belkiot.in">Courses</a>
+            </li>
+        </ul>
+    </nav>
 
     <hr>
     <h2>@header or Hero</h2>
-    <img src="../images/hero-image.svg" />
-    <h1>Heading Inside Hero</h1>
+    <header class = "hero">
+        <img class = "hero-img" src="../images/hero-image.svg" />
+        <h1 class="hero-heading">BelkIoT - IoT Every<span class = "heading-inverted">Thing</span></h1>
+    </header>
 
     <hr>
     <h2>@Section</h2>
-    <section>
-        <h3>White section</h3>
-        <p>This will have white background</p>
+    <section class = "section">
+        <div class= "container container-center">
+            <h1>White section</h1>
+            <p>Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s overall functionality. Web design also includes web apps, mobile apps, and user interface design. </p>
+        </div>
     </section>
 
-    <section>
-        <h3>Off white section</h3>
-        <p>This will have gray background</p>
+    <section class = "section off-white">
+        <div class= "container container-center">
+            <h1> Off White section</h1>
+            <p>Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s overall functionality. Web design also includes web apps, mobile apps, and user interface design. </p>
+        </div>
     </section>
 
-    <footer>
-        <div>Some Small Heading inside the Footer</div>
-        <ul>
-            <li>Social Link One</li>
-            <li>Social Link Two</li>
-            <li>Social Link Three</li>
+
+    <footer class = "footer">
+        <div class = "footer-header">Connect with me here</div>
+        <ul class = "social-links list-non-bullet" >
+            <li class= "list-item-inline">
+                <a class = "links" href= "https://instagram.com/belkerisai" target="_blank">
+                    Instagram
+                </a>
+            </li>
+            <li class = "list-item-inline">
+                <a class = "links" href= "https://linkedin.com/in/belkerisaiprakash" target="_blank">
+                    LinkedIn
+                </a>
+            </li>
+            <li class = "list-item-inline">
+                <a class = "links" href= "https://twitter.com/belkerisai" target="_blank">
+                    Twitter
+                </a>
+            </li>
         </ul>
 
     </footer>
